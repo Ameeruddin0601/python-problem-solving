@@ -1,5 +1,5 @@
 #pehle 3 input lege
-#pehla input is-> length of list
+#1st input is-> length of list
 #2nd input is -> starting range
 #3rd input is -> ending range
 #fir 6 input lege-> wo distance hoge

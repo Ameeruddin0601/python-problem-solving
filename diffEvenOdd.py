@@ -1,7 +1,8 @@
 #input: 24319587
-#odd numbers ka sum nikaal
-#even numbers ka sum nikaal 
-#aur dono sum ka difference nikaal
+#sum of odd numbers
+#sum of even numbers 
+#difference between sum of both odd and even
+#This question could be asked by giving a 2D Matrix as an input
 
 input_num = input()
 sumOfEven = 0

@@ -1,6 +1,4 @@
-#check karna hai ki jo input me word mila hai, kya wo
-#given language ka keyword hai? agar hai to output do ki haa
-#wo keyword hai, nai to nai
+#check if given input word is a keyword of given language
 
 keywords={"break","case","continue","default","defer","else","for","func","type","var"}
 
