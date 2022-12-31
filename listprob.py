@@ -127,3 +127,14 @@
 #     # print(li)
 # first_rep([1,2,3,4,4,3,2,5,8,6])
 
+#iterate a list without using loops
+lst=[10,20,30,40,50,60]
+start_idx = 0
+end_idx = len(lst)
+def iterate(lst,start_idx,end_idx):
+    if start_idx<0 or start_idx>=end_idx:
+        return
+    print(lst[start_idx],start_idx,end_idx)
+    iterate(lst,start_idx+1,end_idx)
+    
+print(iterate(lst,start_idx,end_idx))
