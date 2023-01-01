@@ -111,11 +111,26 @@
 # print(solution("x"))
 
 # Title Case- Codewars
-def title_case(title, minor_words=''):
-    title=title.lower().split()
-    for i in range(len(title)):
-        if title[i] not in minor_words.lower().split() or i==0:
-            title[i]=title[i].capitalize()
-    return " ".join(title)
+# def title_case(title, minor_words=''):
+#     title=title.lower().split()
+#     for i in range(len(title)):
+#         if title[i] not in minor_words.lower().split() or i==0:
+#             title[i]=title[i].capitalize()
+#     return " ".join(title)
 
-print(title_case('THE WIND IN THE WILLOWS', 'The In'))
+# print(title_case('THE WIND IN THE WILLOWS', 'The In'))
+
+#Question
+#input- a3b2c4 
+#output- aaabbcccc
+st="a3b2c4"
+def charnum(st):
+    output=""
+    for i in st:
+        if i.isalpha():
+            var=i
+        else:
+            num=int(i)
+            output += var*num
+    return output
+print(charnum(st))
