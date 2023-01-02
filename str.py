@@ -123,14 +123,33 @@
 #Question
 #input- a3b2c4 
 #output- aaabbcccc
-st="a3b2c4"
-def charnum(st):
-    output=""
-    for i in st:
-        if i.isalpha():
-            var=i
-        else:
-            num=int(i)
-            output += var*num
-    return output
-print(charnum(st))
+# st="a3b2c4"
+# def charnum(st):
+#     output=""
+#     for i in st:
+#         if i.isalpha():
+#             var=i
+#         else:
+#             num=int(i)
+#             output += var*num
+#     return output
+# print(charnum(st))
+
+'''
+Q.
+Input: aaaabbbccd
+Output: 4a3b2c1d
+'''
+st='aaaabbbccd'
+output=''
+count=0
+char=st[0]
+for i in st:
+    if i==char:
+        count+=1
+    else:
+        output+=str(count)+char
+        char=i
+        count=1
+output+=str(count)+char
+print(output)
